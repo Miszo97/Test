@@ -1,7 +1,10 @@
 #include <iostream>
 
-void main(){
+auto main() -> decltype(1){
 
 std::cout<<"Hello world";
 
+
+
+return 1;
 }
