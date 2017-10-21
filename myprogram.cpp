@@ -1,7 +1,9 @@
-#include <iostream>
+include <iostream>
 #include <vector>
 #include <algorithm>
+
 //Changes by master's branch
+
 template <typename T, int i>
 T Double(T num){
 	return num +  i;
