@@ -1,6 +1,9 @@
-include <iostream>
+#include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
+#include "functions.h"
+
 
 //Changes by master's branch
 
@@ -10,17 +13,16 @@ T Double(T num){
 }
 
 
+
 auto main() -> decltype(1){
 
-std::vector<int> v {1,2,3};
-std::vector<int> v2 (v.size());
-std::transform(v.begin(),v.end(), v2.begin(), Double<int, 5>);
+std::map<int, int > map;
+map.insert(std::make_pair(1,2));
+map[1] = 3;
+sayHello();
 
-for(const auto& a: v2)
-	std::cout<<a;
-
-std::cout<<"\n";
-
+for(const auto& it: map)
+	std::cout<<it.first<<" "<<it.second<<"\n";
 
 return 1;
 }
