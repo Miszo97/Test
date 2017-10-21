@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-//CHANGES
+//Changes by hotfix's branch
 template <typename T, int i>
 T Double(T num){
 	return num +  i;
