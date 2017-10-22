@@ -13,7 +13,7 @@ T Double(T num){
 }
 
 
-
+//auto return sice c++11 by master
 auto main() -> decltype(1){
 
 std::map<int, int > map;
