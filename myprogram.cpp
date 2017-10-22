@@ -21,6 +21,7 @@ map.insert(std::make_pair(1,2));
 map[1] = 3;
 sayHello();
 
+//Printing all values by hotfix
 for(const auto& it: map)
 	std::cout<<it.first<<" "<<it.second<<"\n";
 
