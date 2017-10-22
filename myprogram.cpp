@@ -4,7 +4,7 @@
 #include <map>
 #include "functions.h"
 
-
+//Changes by hotfix 1 #1
 //Changes by master's branch
 
 template <typename T, int i>
