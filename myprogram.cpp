@@ -12,7 +12,7 @@ T Double(T num){
 	return num +  i;
 }
 
-
+//changes ny hotfix2 #1
 //auto return sice c++11 by master
 auto main() -> decltype(1){
 
