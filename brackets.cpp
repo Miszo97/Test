@@ -7,25 +7,8 @@
 //
 
 #include <iostream>
-#include <future>
-#include <vector>
-#include <thread>
-#include <mutex>
-#include <list>
-#include <type_traits>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
 #include <stack>
 
-struct A{
-    A(int _a): a(std::move(_a)) {}
-private:
-    int a;
-    
-    
-};
 
 bool check(const std::string& input){
     
@@ -36,6 +19,7 @@ bool check(const std::string& input){
         if (temp == '(' || temp == '[' || temp == '{')
             stack.push(temp);
         else if(stack.empty()) return false; else
+
             switch (temp) {
                 case ')':
                     if(stack.top() != '(') return false; else stack.pop();
